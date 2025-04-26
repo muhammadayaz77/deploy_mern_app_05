@@ -5,11 +5,11 @@ import { TypeAnimation } from "react-type-animation";
 function Home() {
   const [typingStatus, setTypingStatus] = useState("human1");
   return (
-    <div className="home-page grid grid-cols-12 lg:h-[645px] relative max-w-screen-xl mx-auto">
+    <div className="home-page h-full grid grid-cols-12 relative max-w-screen-xl mx-auto">
       <div className="lg:col-span-6 col-span-12 pt-36 w-full">
         <img src="/orbital.png" alt="orbital" className="orbital bottom-5" />
         <div className="text-center mx-5">
-          <h1 className="xl:text-9xl font-bold pb-6 md:text-7xl text-5xl">
+          <h1 className="logo-head xl:text-9xl font-bold pb-6 md:text-7xl text-5xl">
             Blyzr AI
           </h1>
           <h2 className="md:text-xl text-lg font-semibold mb-3">
@@ -17,7 +17,7 @@ function Home() {
           </h2>
           <p className="mb-8 md:text-base text-sm">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
-            ea.ladskf alksjd kasdj a orem lor laskdf laksjd lkasj slkd{" "}
+            ea.ladskf alksjd kasdj a orem lor laskdf laksjd lkasj slkd
           </p>
           <Link
             to="/dashboard"
@@ -81,9 +81,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="term absolute bottom-0 w-full flex flex-col items-center gap-2">
+      <div className="col-span-12 term w-full gap-2 mt-auto flex flex-col items-center">
         <img src="/logo.png" alt="" className="w-9 h-9" />
-        <div className="text-gray-400">
+        <div className="text-gray-400 flex gap-2">
           <Link to="/">Terms of Service</Link>
           <span> | </span>
           <Link to="/">Privacy Policy</Link>

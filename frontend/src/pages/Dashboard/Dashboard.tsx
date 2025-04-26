@@ -1,6 +1,8 @@
 import { useAuth } from "@clerk/clerk-react"
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ChatList from "../../components/ChatList";
+import DashboardPage from "../../components/DashboardPage";
 
 
 function Dashboard() {
@@ -15,8 +17,13 @@ function Dashboard() {
   if(!isLoaded)
     return <h1>Loading...</h1>
   return (
-    <div className="text-red-600">
-      dashboard
+    <div className="grid grid-cols-12 h-full">
+      <div className="col-span-3">   
+        <ChatList />
+      </div>
+      <div className="col-span-9 bg-[#12101b]">
+        <DashboardPage />
+      </div>
     </div>
   )
 }
